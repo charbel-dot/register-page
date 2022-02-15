@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+    <title>Register Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Profile Information</h1>
+        <img src="./images/support-faq.png" class="logo-1" />
+      </div>
+      <form class="form-field" action="./app/server.js" method="post">
+        <label for="mobileNumber">Mobile number</label>
+        <input
+          type="text"
+          name="mobileNumberField"
+          placeholder="8 digits mobile number"
+          id="mobileNumber"
+          required
+        />
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          name="first-name"
+          placeholder="Enter First Name"
+          id="firstName"
+          required
+        />
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          name="last-name"
+          placeholder="Enter Last Name"
+          id="lastName"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password-field"
+          placeholder="Enter Password"
+          id="password"
+          required
+        />
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          name="password-field-confirm"
+          placeholder="Enter confirm password"
+          id="confirmPassword"
+          required
+        />
+        <label>Birthday</label>
+        <select name="day" required>
+          <option value="Select Day">Select Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        <select name="month" required>
+          <option value="Select Month">Select Month</option>
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        <select name="year">
+          <option value="Select Year">Select Year</option>
+          <option value="1920">1920</option>
+        </select>
+        <label>Gender</label>
+        <label> <input type="radio" name="sex" value="male" /> Male</label>
+        <label> <input type="radio" name="sex" value="female" /> Female</label>
+        <label for="address">Address</label>
+        <input
+          type="text"
+          name="address-field"
+          placeholder="Enter Address"
+          id="address"
+          required
+        />
+        <label for="occupationField">Occupation</label>
+        <input
+          type="text"
+          name="occupation"
+          placeholder="Enter occupation"
+          id="occupationField"
+          required
+        />
+        <label for="language">Preferred Language</label>
+        <select name="language" value="English" required>
+          <option value="English">English</option>
+          <option value="Arabic">Arabic</option>
+        </select>
+        <button type="submit" class="btn-submit">Register</button>
+        <button type="reset" class="btn-reset">Cancel</button>
+      </form>
+    </div>
+  </body>
+</html>
