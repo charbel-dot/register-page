@@ -1,4 +1,6 @@
 const menu = document.querySelector(".header-1"); // Navigation bar class
+const menuStuff = document.querySelector(".menu-content");
+const burger = document.querySelector(".burger");
 
 // Colors array
 const colors = ["#e63423", "#91ddff", "#d6d525"];
@@ -10,3 +12,9 @@ const changeBackgroundColor = () => {
 
 // Change the background color every 5 seconds
 setInterval(changeBackgroundColor, 5000);
+
+// Burger button animations
+// TODO
+burger.addEventListener("click", () => {
+  return;
+});
