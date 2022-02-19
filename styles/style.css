@@ -233,6 +233,22 @@ select {
   font-size: var(--font-size-1);
 }
 
+/* menu button */
+
+.burger {
+  width: auto;
+  height: auto;
+  display: none;
+  cursor: pointer;
+}
+
+.burger > div {
+  margin: 5px;
+  background-color: var(--color-button-white);
+  width: 30px;
+  height: 4px;
+}
+
 /* Responsive section */
 
 @media only screen and (max-width: 768px) {
@@ -246,7 +262,7 @@ select {
     display: none;
   }
 
-  .header h1 {
+  .header > h1 {
     font-size: var(--font-size-mobile);
     margin-left: 0px;
   }
@@ -258,5 +274,47 @@ select {
   .btn-submit,
   .btn-reset {
     margin: 20px 0px 10px 45px;
+  }
+
+  /* navigation bar styling */
+
+  .burger {
+    display: block;
+    z-index: 2;
+  }
+
+  .header-1 {
+    height: 15vh;
+  }
+
+  .menu-1 .menu-content {
+    position: absolute;
+    right: 45px;
+    top: 90px;
+    flex-direction: column;
+    z-index: 1;
+    background-color: var(--color-button);
+    width: auto;
+    transition: 200ms ease-in;
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .menu-1 .menu-content > li {
+    padding: 15px;
+    transition: 100ms ease-in;
+    font-size: var(--font-size-mobile);
+  }
+
+  .menu-1 .menu-content > li > a {
+    font-size: var(--font-size-mobile);
+    transition: 100ms ease-in;
+  }
+
+  .menu-1 .menu-content > li > a:hover {
+    border-bottom: 1px solid var(--color-button-white);
   }
 }
