@@ -167,7 +167,9 @@ body {
 }
 
 .form-field > input:focus {
-  outline: 1.5px solid var(--color-border);
+  /*outline: 1.5px solid var(--color-border);*/
+  box-shadow: 0px 0px 8px 0px var(--color-border);
+  transition: 50ms ease-in;
 }
 
 .form-field > input::placeholder {
@@ -231,6 +233,12 @@ select {
   color: rgba(0, 0, 0, 0.6);
   font-weight: bold;
   font-size: var(--font-size-1);
+  box-shadow: 0px 0px 2px 0px var(--color-border);
+}
+
+select:focus {
+  box-shadow: 0px 0px 8px 0px var(--color-border);
+  transition: 50ms ease-in;
 }
 
 /* menu button */
