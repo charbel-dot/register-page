@@ -64,7 +64,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 90vw;
   height: auto;
 }
 
@@ -72,7 +72,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: auto;
   margin: 0px;
   padding: 0px;
 }
@@ -253,8 +254,27 @@ select:focus {
 .burger > div {
   margin: 5px;
   background-color: var(--color-button-white);
-  width: 30px;
+  width: 40px;
   height: 4px;
+  transition: 200ms ease-in;
+}
+
+/* Burger on click animation */
+
+.toggle .row-1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.toggle .row-2 {
+  opacity: 0;
+}
+
+.toggle .row-3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.show .menu-content {
+  transform: rotate(45deg);
 }
 
 /* Responsive section */
@@ -284,7 +304,7 @@ select:focus {
     margin: 20px 0px 10px 45px;
   }
 
-  /* navigation bar styling */
+  /* Navigation bar styling */
 
   .burger {
     display: block;
@@ -303,12 +323,13 @@ select:focus {
     z-index: 1;
     background-color: var(--color-button);
     width: auto;
-    transition: 200ms ease-in;
+    transition: 300ms ease-in;
     display: none;
   }
 
-  .show {
-    display: block;
+  .menu-1 > img {
+    width: 62px;
+    height: 60px;
   }
 
   .menu-1 .menu-content > li {
@@ -324,5 +345,46 @@ select:focus {
 
   .menu-1 .menu-content > li > a:hover {
     border-bottom: 1px solid var(--color-button-white);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-1 {
+    padding: 0;
+    height: 20vh;
+  }
+
+  .menu-1 .menu-content > li > a{
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .menu-1 .menu-content > li {
+    padding: 0px 30px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .menu-1 .menu-content > li {
+    padding: 0px 20px 0px 0px;
+    margin-left: 0px;
+  }
+
+  .menu-1 .menu-content > li > a{
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+   .menu-1 .menu-content {
+    padding: 20px;
+  }
+
+  .menu-1 .menu-content > li {
+    padding: 0px 20px 0px 0px;
   }
 }
