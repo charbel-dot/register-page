@@ -354,7 +354,7 @@ select:focus {
     height: 20vh;
   }
 
-  .menu-1 .menu-content > li > a{
+  .menu-1 .menu-content > li > a {
     font-size: 16px;
     margin: 0;
   }
@@ -365,22 +365,20 @@ select:focus {
   }
 }
 
-
 @media only screen and (max-width: 1000px) {
-
   .menu-1 .menu-content > li {
     padding: 0px 20px 0px 0px;
     margin-left: 0px;
   }
 
-  .menu-1 .menu-content > li > a{
+  .menu-1 .menu-content > li > a {
     font-size: 14px;
     margin: 0;
   }
 }
 
 @media only screen and (max-width: 769px) {
-   .menu-1 .menu-content {
+  .menu-1 .menu-content {
     padding: 20px;
   }
 

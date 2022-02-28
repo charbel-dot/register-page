@@ -15,8 +15,7 @@ setInterval(changeBackgroundColor, 5000);
 
 // Burger button animations
 burger.addEventListener("click", () => {
-  burger.classList.toggle('toggle');
+  burger.classList.toggle("toggle");
   // TODO fix burger menu
-  menuItems.classList.toggle('show');
+  menuItems.classList.toggle("show");
 });
-
